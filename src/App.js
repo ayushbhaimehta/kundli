@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LoginPage from './components/pages/LoginPage';
 import RegisterPage from './components/pages/RegisterPage';
 import ForgetPasswordPage from './components/pages/ForgetPasswordPage';
-import Home from './components/pages/HomePage';
+import Home from './components/pages/Home';
 import Houses from './components/pages/Houses';
+import KundliResult from './components/pages/KundliResult';
 
 import './App.css';
 
@@ -17,6 +18,7 @@ export default function App() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: 'black'
     };
 
     return (
@@ -27,6 +29,7 @@ export default function App() {
                     <Route path="/register" component={RegisterPage} />
                     <Route path="/forget-password" component={ForgetPasswordPage} />
                     <Route path="/details" component={Houses} />
+                    <Route path="/kundli" component={KundliResult} />
                     <Route path="/" component={Home} />
                 </Switch>
             </div>

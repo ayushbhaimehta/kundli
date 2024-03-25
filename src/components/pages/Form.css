@@ -1,34 +1,61 @@
-.form-container {
-    max-width: 400px;
-    margin: 20px auto;
+.kundli-form-container {
+    max-width: 700px;
+    width: 70%;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    position: absolute;
+    z-index: 500;
 }
 
-form {
+.kundli-form {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timezone-select {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
 }
 
 label {
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 5px;
 }
 
-input {
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 70%;
     padding: 8px;
-    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
 }
 
 button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
